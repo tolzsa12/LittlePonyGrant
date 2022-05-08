@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Car2</title>
+
+    <link rel="stylesheet" href="StylePatmentCar1.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+  <!--------------header-------->
+  <body itemtype='https://schema.org/Blog' itemscope='itemscope'
+  class="post-template post-template-elementor_header_footer single single-post postid-118 single-format-standard wp-custom-logo ast-desktop ast-separate-container ast-right-sidebar astra-2.5.4 ast-header-custom-item-inside ast-blog-single-style-1 ast-single-post ast-inherit-site-logo-transparent ast-normal-title-enabled elementor-default elementor-template-full-width elementor-kit-192 elementor-page elementor-page-118">
+
+  <div class="hfeed site" id="page">
+
+  <header class="header" id="navigation-menu">
+    <div class="container">
+        <nav>
+            <a href="#" class="logo"> <img src="image/logo.png" alt=""> </a>
+
+            <ul class="nav-menu">
+                <li> <a href="#home" class="nav-link">HOME</a> </li>
+                <li> <a href="#about" class="nav-link">ABOUT</a> </li>
+                <li> <a href="#service" class="nav-link">SERVICE</a> </li>
+                <li> <a href="#restaurant" class="nav-link">RESTAURANT</a> </li>
+                <li> <a href="#gallery" class="nav-link">GALLERY</a> </li>
+                <li> <a href="#contact" class="nav-link">CONTACT</a> </li>
+            </ul>
+            <div class="cart"><img width="auto" height="50" src="image/cart.png" class="attachment-full size-full"
+                alt="hotel logo" loading="lazy" srcset="image/CART.png 366w"
+                sizes="(max-width: 500px) 200vw, 150px" /></a></div>
+            
+            <div class="hambuger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+  <script>
+    const hambuger = document.querySelector('.hambuger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hambuger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hambuger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hambuger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+
+  <!--------------header-------->
+<!--------------book-------------->
+<!--section คือการแบ่งส่วนกัน---->
+<div class="home" id="home">
+    <div class="head_container">
+      <div class="image">
+        <img src="image/COVER4.png" class="slide">
+      </div>
+    </div>
+</div>
+
+<!--book_detail-->
+<div class="book_detail">
+    <br>
+    <h2>Reference number  558785057</h2>
+    <!--separate left and right-->
+    <div class="row"><!--for flexing-->
+        <!--coloum1-->
+        <div class="column">
+            <h2 style="font-size: 30px;">Mazda CX-30 2.0 C </h2>
+           <div
+               class="boat"><img width="500" height="400" src = "image/car.png">
+            </div>
+            <div>
+                <br><br>
+                <h2>Guest name</h2>
+                <input type="text" name="Guest_Name" placeholder="Guest Name" style="border-color: #d6d6d6; width: 60%;">
+                <h2>Phone number</h2>
+                <input type="text" name="Phone_Number" placeholder="Enter Phone number" style="border-color: #d6d6d6; width: 60%;">
+                <h2>Notify to hotel</h2>
+                <input type="text" name="Notify_Hotel" placeholder="Enter your message" style="border-color: #d6d6d6; width: 60%;">
+                <h2><br>Total price</h2>
+                <p>Total includes tax recovery charges and service fees.</p>
+                <p>Full payment will be charged to your credit card when you book this hotel.</p>
+            </div>
+            
+            
+        </div>
+        <!--column2-->
+        <div class="column">
+            <h2><br>Mazda CX-30 2.0 C </h2>
+                <div class = "detail_in_col2">
+                    <div class = "row_in_col2">
+                        <div class="column_in_col2">
+                            <div class="col2_left">
+                                <ul type="disc">
+                                    <li>View : Cars Type</li>
+                                    <li>Car Type : SUV</li>
+                                    <li>Max : 4 Adults</li>
+                                    <br>
+                                </ul>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+                
+                <div class = "Service_Staff">
+                    <h2 style="text-align: center;">Service Staff</h2>
+                    <div class = "row_in_col2">
+                        <div class="column_in_col2">
+                        <img src="picUI/ton.png" alt="cotton">
+                            <div class="description" style="float:right"> 
+                                <td style="text-align: center;">
+                                    สมปอง สองยาม<br>
+                                    Rating <br>                                                                  
+                                    ประสบการณ์ : 1 ปี<br>
+                                    อายุ : 25 ปี <br>                                                                                                          
+                                </td>
+                            </div>
+                        </div>
+                        
+                        <div class="column_in_col2"> 
+                           <img src="picUI/gib.png" alt="gib">  
+                           <div class="description" style="float:right"> 
+                            <td style="text-align: center;">
+                                ณัฐนิช หนูขวัญ<br>
+                                Rating <br>                                                                  
+                                ประสบการณ์ : 3 ปี<br>
+                                อายุ : 35 ปี <br>                                                                                                                   
+                            </td>
+                            </div> 
+                        </div>        
+                    </div>
+                    <div class = "Information_booking">
+                        <table style="width: 80%;" >
+                            <tr>
+                                <td>Information Booking</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td ><br>Check in:   Sat 28 Jan 2023 <br><br>
+                                    Check out:   Mon  06 Feb 2023<br><br>
+                                    For:   2 Days<br><br> 
+                                    Service Staff : ณัฐนิช หนูชวัญ<br><br></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Car Type : SUV <br>                                                                       
+                                    Tax and fee:    <br>                                                                                  
+                                    Special discount GoLocal<br>                                                                                                                   
+                                </td>
+                                <td>
+                                    THB 4,000.00<br>
+                                    THB 228.48<br>
+                                    -<br>
+                                </td>
+                            </tr>
+                        </table>
+                        <h2>THB 4,228,48</h2>
+                        </div>
+                </div>
+         </div>
+    </div>
+</div>
+<div class="end_line"></div>
+<!---Payment and Confirmation--->
+<div class="Payment_method">
+    <h2>Payment and Confirmation</h2>
+    <div class="Payment_Box">
+        <p>Choose another payment method</p>
+            <tr> 
+                <img width="60px" height="auto" src = "image/method1.png">  
+                <img width="40px" height="auto" src = "image/method2.png" style="margin-bottom: 1%; margin-left: 5%;">
+                <img width="40px" height="auto" src = "image/method3.png" style="margin-bottom: 1%; margin-left: 5%; ">
+                <img width="60px" height="auto" src = "image/method4.png" style="margin-bottom: 1.5%; margin-left: 5%; ">
+            </tr>
+        <br>
+        <p>Enter payment infomation</p>
+        <p>accepted:</p>
+        <tr> 
+            <img width="40px" height="auto" src = "image/card1.png">  
+            <img width="20px" height="auto" src = "image/card2.png" style="margin-bottom: 1%; margin-left: 2%;">
+            <img width="20px" height="auto" src = "image/card3.png" style="margin-bottom: 1%; margin-left: 2%; ">
+            <img width="40px" height="auto" src = "image/card4.png" style="margin-bottom: 1.5%; margin-left: 2%; ">
+            <img width="40px" height="auto" src = "image/card5.png" style="margin-bottom: 1.5%; margin-left: 2%; ">
+        </tr>
+        <div class="row">
+            <div class="column">
+                <h2>Card number</h2>
+                <input type="text" name="Card number" placeholder="Card number" style="border-color: #d6d6d6; width: 60%;">
+                    <h2>CSV Help?</h2>
+                    <input type="text" name="CSV" placeholder="CSV" style="border-color: #d6d6d6; width: 60%;">
+            </div>
+            <div class="column">
+                <h2>Name account</h2>
+                <input type="text" name="Name account" placeholder="Name account" style="border-color: #d6d6d6; width: 60%;">
+                    <h2>Card Expiry</h2>
+                    <input type="month" id="month" name="month" style="border-color: #d6d6d6; width: 60%;">
+            </div>
+        </div>
+        <div class="Button_summit">
+            <input type="submit" value="Finish Booking">
+        </div>
+    </div>  
+     
+</div>

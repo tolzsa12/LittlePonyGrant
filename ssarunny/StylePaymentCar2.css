@@ -1,0 +1,566 @@
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue: #1565D8;
+    --second-yellow: #F9D100;
+    --third-blue: #36C3C5;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Vadodara';
+    scroll-behavior: smooth;
+    border-left: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  
+  .head_container {
+    max-width: 90%;
+    margin: auto;
+  }
+  /*-----------------------*/
+  .head_container {
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  
+  header {
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .logo img {
+    width: 80px;
+    margin-left: 20px;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .cart{
+    margin-right: 40px;
+  }
+  
+  .hambuger {
+    display: none;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(59, 59, 59);
+  }
+  
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header ul li {
+    margin-left: 3rem;
+  }
+  
+  header ul li a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #696F79;
+    transition: 0.5s;
+  }
+  
+  header ul li a:hover {
+    color: #C1B086;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    header ul {
+      display: block;
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.5s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      z-index: 20;
+    }
+  
+    header ul.active {
+      left: 0%;
+    }
+  
+    header ul li {
+      margin: 2.5rem 0;
+    }
+  
+    header ul li a {
+      color: black;
+    }
+  
+    .hambuger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hambuger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hambuger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hambuger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+  /*--------------header--------*/
+  /*--------------home--------*/
+  
+  .home .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 40%;
+  }
+  
+  .book{
+      max-width: 80%;
+  }
+  /*--------------------------------*/
+  /*--------------header--------*/
+    /*comment*/
+    .top-bar{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 10;
+        margin-bottom: 0;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    } 
+    
+    .front{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .botton-head {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .botton-head > .HOME {
+        padding: 10px;
+        color: #696F79;
+        font-weight: normal;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .botton-head > .HOME:hover {
+        background-color: rgb(204, 204, 204);
+    }
+    
+    .botton-head > .ABOUT{
+        padding: 10px;
+        color: #696F79;
+        font-weight: normal;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .botton-head > .ABOUT:hover {
+        background-color: rgb(204, 204, 204);
+    }
+    
+    .botton-head > .ROOM{
+        padding: 10px;
+        color: #696F79;
+        font-weight: normal;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .botton-head > .ROOM:hover {
+        background-color: rgb(204, 204, 204);
+    }
+    
+    .botton-head > .SERVICE{
+        padding: 10px;
+        color: #696F79;
+        font-weight: normal;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .botton-head > .SERVICE:hover {
+        background-color: rgb(204, 204, 204);
+    }
+    
+    .botton-head > .RESTAURANT{
+        padding: 10px;
+        color: #696F79;
+        font-weight: normal;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .botton-head > .RESTAURANT:hover {
+        background-color: rgb(204, 204, 204);
+    }
+    
+    .botton-head > .GALLERY{
+        padding: 10px;
+        color: #696F79;
+        font-weight: normal;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .botton-head > .GALLERY:hover {
+        background-color: rgb(204, 204, 204);
+    }
+    
+    .botton-head > .CONTACT{
+        padding: 10px;
+        color: #696F79;
+        font-weight: normal;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .botton-head > .CONTACT:hover {
+        background-color: rgb(204, 204, 204);
+    }
+    .cart{
+        padding: 10px;
+        color: #696F79;
+        font-weight: normal;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .cart:hover{
+        background-color: rgb(204, 204, 204);
+    }
+    .pic{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .main{
+        margin-top: 50px;
+    }
+    
+    .main .title{
+        font-family: "Helvetica";
+        font-weight: bold;
+        text-align: center;
+    }
+  /*อันนี้เวลาย่อหน้าจอเหลือ 768pxจะแสงออกมาเป็นอย่างนี้*/
+  @media only screen and (max-width: 768px) {
+    header ul {
+      display: block;
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.5s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      z-index: 20;
+    }
+  
+    header ul.active {
+      left: 0%;
+    }
+  
+    header ul li {
+      margin: 2.5rem 0;
+    }
+  
+    header ul li a {
+      color: black;
+    }
+  
+    .hambuger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hambuger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hambuger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hambuger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+  
+  /*--------------header--------*/
+  /*--------------home--------*/
+  
+  .home .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 40%;
+  }
+  
+  .book{
+      max-width: 80%;
+  }
+  
+  
+  /*--------------home--------*/
+  /* book detail (all booking detail)*/
+  .book_detail{
+      margin-top: 15%;
+      margin-left: 5%;
+      margin-right: 5%;
+  }/*booking frame/
+  /*--------------book--------*/
+  .flex {
+    display: flex;/*div will sep horizontally*/
+  }
+  .row {/*for seperating each part by row*/
+    display: flex;
+    margin-top: 2%;
+  }
+  .column{/*each column in row*/
+    width: 50%;
+  }
+  .column img{
+      width: 60%;
+  }
+  .column .detail_in_col2
+  {
+      background-color: #E7FCFF;
+      /*padding-top: 15px;*/
+  }
+  .row_in_col2
+  {
+      display: flex;
+  }
+  .column_in_col2
+  {
+    width: 50%;
+    padding-left: 10%;
+  }
+  .column_in_col2 .col2_left /*adjust left text in bluebox*/
+  {
+      padding-top: 10%;
+  }
+  .column_in_col2 .col2_right
+  {
+      padding-bottom: 10%;
+  }
+  .column_in_col2 ul{
+      list-style-type: circle;
+  }
+  .book_detail h2
+  {
+      padding: 1%;
+  }
+  .Service_Staff .column_in_col2
+  {
+      background-color: white;
+      border-style: groove;
+      border-radius: 10px;
+      padding-left: 1%;
+    }
+    .Service_Staff .column_in_col2 img
+    {
+        padding-top: 1%;
+        width: 50%;
+    }
+    /*ในรูปพนักงาน*/
+   .Information_booking table,tr
+   {
+    border:1px solid black
+   }
+   .Information_booking table
+   {
+    margin-left: 10%;
+    margin-top :5%;   
+    border-collapse: collapse;
+   }
+   #t32 /*tab 32 times*/
+   {-moz-tab-size: 32; /* Firefox */
+    tab-size: 32;}
+    /**/
+  /*booking Frame*/
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .book {
+    margin-top: 20%;
+    margin-left: 10%;
+    width: 100%;
+    height: 20vh;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+    
+  }
+  
+  .book .input {
+    background: #ffffff;
+    padding: 20px 20px 40px 20px;
+    box-shadow: 0px 4px 15px rgb(112, 112, 112);
+    width: 90%;
+    font-size: 30px;
+  }
+  
+  .book .search {
+    background: var(--third-blue);
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgb(112, 112, 112);
+  }
+  
+  input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+    background: #fafafa;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .book .search {
+    width: 20%;
+  }
+  
+  .search input{
+      color: #fff;
+  }
+  
+  .book .search input {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  
+  /*--------------book--------*/
+  /*-------------- list room--------*/
+  .Service_Staff
+  {
+    margin-top: 10%;
+  }
+  .Information_booking
+  {
+    margin-top: 10%;
+  }
+  .Information_booking h2
+  {
+    margin-top: 20%;
+    color: red;
+    text-align: center;
+  }
+  .end_line{
+    border-top: 1px solid #696F79;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  
+  /*Payment Method*/
+  .Payment_method{
+    margin-left: 10%; 
+    margin-right: 10%;
+    width: 80%;
+    padding: 10px;
+  }
+  /*Payment Confirmation*/
+  .Payment_method .Payment_Box
+  {
+  margin-top: 2%;
+  background-color: #ffffff;
+  padding: 10%;
+  padding-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: 5px 5px 5px 5px  #e5e5e5;
+  }
+  .button_booking{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  width: 300px;
+  margin-top: 20px;
+  text-align: center;
+  }
+  .button_booking .booking input{
+  background-color: var(--primary-blue);
+  color: #fff;
+  text-align: center;
+  }
+  .clear {
+    clear: both;
+  }
+  .Payment_method .Payment_Box .Button_summit input{
+    margin-left: 40%;
+    background-color: #1565D8;
+    width: 20%;
+    color: #fafafa;
+    font-size: large;
+  }
+  .QR{
+    margin: auto;
+    display: flex;
+justify-content: center;
+align-items: center;
+  }
