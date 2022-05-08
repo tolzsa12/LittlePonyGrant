@@ -1,0 +1,282 @@
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue: #1565D8;
+    --second-yellow: #F9D100;
+    --third-blue: #36C3C5;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Vadodara';
+    scroll-behavior: smooth;
+    border-left: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  
+  .head_container {
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  /*--------------header--------*/
+  header {
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .logo img {
+    width: 70px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart{
+    margin-right: 40px;
+  }
+  
+  /*--------------header--------*/
+  /*--------------home--------*/
+  
+  .home .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 40%;
+  }
+  
+  /*--------------header--------*/
+  /*--------------cart----------*/
+
+ section .exit-cart{
+      display: flex;
+  }
+
+  .exit-cart li{
+      margin-left: 6%;
+  }
+
+  .exit-cart h3 {
+      display: grid;
+  }
+
+
+
+  .cart-box{
+    display: block;
+    width: 80%;
+    margin-left: 6%;
+}
+
+.list-box{
+    background-color: #E7FCFF;
+    box-shadow: 1px 1px 1px 1px  #e5e5e5;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #FF7C5F;
+    color: white;
+    padding: 5px 25px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    margin-left: 2%;
+  }
+
+  button i {
+    margin-left: 20px;
+    font-size: 25px;
+  }
+  
+  button span {
+    margin-top: 5px;
+  }
+
+.flex_room {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  .left{
+    width: 25%;
+  }
+
+  .right {
+    width: 75%;
+  }
+
+  .left img{
+      width: 253px;
+      height: 266px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+  }
+
+  .right1 .des-item{
+    line-height: 30px;
+    color: #a4a4a4;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    font-size: 17px;
+  }
+
+  input{
+      display: inline-flex;
+      margin-left: 2%;
+      width: 25px;
+      height: 25px;
+      margin-top: 2.5%;
+  }
+
+  .head-name-list{
+    display: inline;
+    font-size: 30px;
+    color: #6B6B6B;
+    margin-left: 1.5%;
+  }
+
+
+
+  .title-item{
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #6B6B6B;
+  }
+
+  .list{
+      display: flex;
+  }
+
+  li a{
+      margin-right: 15px;
+  }
+
+  .nav_list .list h6{
+    color: #A8A8A8;
+  }
+
+  .list-box input{
+      margin-bottom: 30px;
+      color: #6B6B6B;
+      font-size: 28px;
+      font-weight: 600;
+  }
+
+  .right{
+      margin-right: 50px;
+      margin-left: -10px;
+  }
+
+  .right1{
+      width: 100%;
+  }
+
+  .right1{
+      margin: 20px 20px 0px 20px;
+  }
+
+  .right2 .nav_list li{
+    margin-top: -15px;
+}
+
+  .nav_list{
+      margin-top: 10px;
+      margin-left: -10px;
+  }
+
+  .right2 .nav_list p{
+      color: #6B6B6B;
+  }
+
+  .price{
+      margin-left: 6%;
+      width: 90%;
+      margin-left: 65%;
+      margin-top: 1%;
+  }
+
+  .price p{
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: line-through 1.5px;
+}
+  .price h3{
+      margin-top: -20px;
+      font-size: 25px;
+      color: #FF0000;
+      font-weight: 600;
+  }
+
+  /*----------finish total price---------*/
+
+  .finist-total-price{
+      height: 200px;
+      box-shadow: 3px 3px rgb(0, 0, 0), -1em 0 .4em #e5e5e5;
+      padding-top: 2%;
+  }
+
+  .price-show{
+    margin-left: -150px;
+    margin-top: -20px;
+}
+
+.price-show p{
+  margin-top: 20px;
+  font-size: 20px;
+  text-decoration: line-through 1.5px;
+}
+.price-show h3{
+    margin-top: -20px;
+    font-size: 25px;
+    color: #FF0000;
+    font-weight: 600;
+}
+
+  .total-price{
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 1%;
+  }
+  
+  .total-price .price-show{
+    margin-left: 65%;
+    margin-top: 1%;
+  }
+  .Button_summit {
+    background: #4eb961;
+    color: white;
+    padding: 5px 25px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    margin-left: 1%;
+    margin-right: 100%;
+    width: auto;
+    height: auto;
+    margin-top: auto;
+  }
+
