@@ -1,0 +1,522 @@
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue: #1565D8;
+    --second-yellow: #F9D100;
+    --third-blue: #36C3C5;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Vadodara';
+    scroll-behavior: smooth;
+    border-left: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  
+  .head_container {
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  /*--------------header--------*/
+  header {
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .logo img {
+    width: 80px;
+    margin-left: 20px;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .cart{
+    margin-right: 40px;
+    height: 100;
+  }
+  .elementor-widget-container{
+      display:flex;
+      flex-direction : row;
+      width: 90%;
+      margin:auto;
+      justify-content: space-between;
+  }
+  .hambuger {
+    display: none;
+  }
+  title.group{
+      font-family: 'Hind Vadodara';
+  }
+  h2.group{
+      font-family: 'Hind Vadodara';
+  }
+  main.group{
+      font-family: 'Hind Vadodara';
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(59, 59, 59);
+  }
+  
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header ul li {
+    margin-left: 3rem;
+  }
+  
+  header ul li a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #696F79;
+    transition: 0.5s;
+  }
+  
+  header ul li a:hover {
+    color: #C1B086;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    header ul {
+      display: block;
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.5s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      z-index: 20;
+    }
+  
+    header ul.active {
+      left: 0%;
+    }
+  
+    header ul li {
+      margin: 2.5rem 0;
+    }
+  
+    header ul li a {
+      color: black;
+    }
+  
+    .hambuger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hambuger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hambuger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hambuger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+  
+  /*--------------header--------*/
+  /*--------------home--------*/
+  
+  .home .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 40%;
+  }
+  
+  .book{
+      max-width: 80%;
+  }
+  
+  
+  /*--------------home--------*/
+  /*--------------book--------*/
+  .flex {
+    display: flex;
+  }
+  h2.group{
+      font-family: 'Hind Vadodara' ;
+      color: #6B6B6B;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .book {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 100%;
+    height: 20vh;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+    
+  }
+  
+  .book .input {
+    background: #ffffff;
+    padding: 20px 20px 40px 20px;
+    box-shadow: 0px 4px 15px rgb(112, 112, 112);
+    width: 90%;
+    font-size: 30px;
+  }
+  
+  .book .search {
+    background: var(--third-blue);
+    padding: 20px;
+        box-shadow: 0px 4px 15px rgb(112, 112, 112);
+  }
+  
+  input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+    background: #fafafa;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .book .search {
+    width: 20%;
+  }
+  
+  .search input{
+      color: #fff;
+  }
+  
+  .book .search input {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  
+  /*--------------book--------*/
+  /*-------------- list room--------*/
+  
+  .main_box{
+    display: block;
+    width: 90%;
+    margin-left: 50px;
+  }
+  
+  .flex_room {
+    display: flex;
+  }
+  
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .mtop {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  
+  button {
+    background: var(--second-yellow);
+    color: white;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+  }
+  
+  .left, .right {
+    width: 50%;
+  }
+  .left img{
+      width: 60%;
+  }
+  p {
+    line-height: 30px;
+    color: #a4a4a4;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+  .content .right h4 {
+    font-size: 20px;
+    color: #6B6B6B;
+  }
+  .nav_list p{
+    font-weight: 400;
+  }
+  .list{
+      display: flex;
+  }
+  li a{
+      margin-right: 15px;
+  }
+  
+  .main_box h2{
+      margin-bottom: 30px;
+      color: #6B6B6B;
+  }
+  
+  .right{
+      margin-right: 50px;
+      margin-left: -30px;
+  }
+  
+  .right1{
+      background-color: #E7FCFF;
+      width: 140%;
+      margin-left: -150px;
+  }
+  
+  .right1 .info{
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+  
+  .right1 .nav_list li{
+    margin-top: -10px;
+  }
+  
+  .head_info{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .elementor-widget-heading .elementor-heading-title {
+    margin: 0;
+  }
+  .nav_list{
+      margin-top: 20px;
+      margin-left: 30px;
+  }
+  
+  .right2 .nav_list li{
+      margin-top: -10px;
+  }
+  
+  .right2 .nav_list p{
+      color: #00A106;
+  }
+  
+  .price{
+      margin-left: -150px;
+      margin-top: -20px;
+  }
+  
+  .price p{
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: line-through 1.5px;
+  }
+  .price h3{
+      margin-top: 5%;
+      font-size: 25px;
+      color: #FF0000;
+      font-weight: 600;
+  }
+  
+  .top-bar{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10;
+    margin-bottom: 0;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  } 
+  
+  .front{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .botton-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .botton-head > .HOME {
+    padding: 10px;
+    color: #696F79;
+    font-weight: normal;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .botton-head > .HOME:hover {
+    background-color: rgb(204, 204, 204);
+  }
+  
+  .botton-head > .ABOUT{
+    padding: 10px;
+    color: #696F79;
+    font-weight: normal;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .botton-head > .ABOUT:hover {
+    background-color: rgb(204, 204, 204);
+  }
+  
+  .botton-head > .ROOM{
+    padding: 10px;
+    color: #696F79;
+    font-weight: normal;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .botton-head > .ROOM:hover {
+    background-color: rgb(204, 204, 204);
+  }
+  
+  .botton-head > .SERVICE{
+    padding: 10px;
+    color: #696F79;
+    font-weight: normal;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .botton-head > .SERVICE:hover {
+    background-color: rgb(204, 204, 204);
+  }
+  
+  .botton-head > .RESTAURANT{
+    padding: 10px;
+    color: #696F79;
+    font-weight: normal;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .botton-head > .RESTAURANT:hover {
+    background-color: rgb(204, 204, 204);
+  }
+  
+  .botton-head > .GALLERY{
+    padding: 10px;
+    color: #696F79;
+    font-weight: normal;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .botton-head > .GALLERY:hover {
+    background-color: rgb(204, 204, 204);
+  }
+  
+  .botton-head > .CONTACT{
+    padding: 10px;
+    color: #696F79;
+    font-weight: normal;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .botton-head > .CONTACT:hover {
+    background-color: rgb(204, 204, 204);
+  }
+  .button_room{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    margin-top: -20px;
+  }
+  
+  .button_room .booking input{
+      background-color: var(--primary-blue);
+      color: #fff;
+  }
+  .button_room .booking input:hover{
+    background-color: var(--primary-blue);
+    border-color: #27f0f7;
+    
+  }
+  
+  .button_room .add_to_card input{
+    background-color: #fff;
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+  }
+  .button_room .add_to_card input:hover{
+    background-color:  var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: #fff;
+  }
+  .pic{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .main{
+    margin-top: 50px;
+  }
+  
+  .main .title{
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .end_line{
+    border-top: 1px solid #696F79;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  
+  
+  
