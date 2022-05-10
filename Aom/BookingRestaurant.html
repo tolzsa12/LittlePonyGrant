@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="StyleBookingRestaurant.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+  <!--------------header-------->
+
+  <body itemtype='https://schema.org/Blog' itemscope='itemscope'
+  class="post-template post-template-elementor_header_footer single single-post postid-118 single-format-standard wp-custom-logo ast-desktop ast-separate-container ast-right-sidebar astra-2.5.4 ast-header-custom-item-inside ast-blog-single-style-1 ast-single-post ast-inherit-site-logo-transparent ast-normal-title-enabled elementor-default elementor-template-full-width elementor-kit-192 elementor-page elementor-page-118">
+
+  <div class="hfeed site" id="page">
+
+
+    <header class="header" id="navigation-menu">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"> <img src="image/LOGO.png" alt=""> </a>
+    
+                <ul class="nav-menu">
+                    <li> <a href="#home" class="nav-link">HOME</a> </li>
+                    <li> <a href="#about" class="nav-link">ABOUT</a> </li>
+                    <li> <a href="#service" class="nav-link">SERVICE</a> </li>
+                    <li> <a href="#restaurant" class="nav-link">RESTAURANT</a> </li>
+                    <li> <a href="#gallery" class="nav-link">GALLERY</a> </li>
+                    <li> <a href="#contact" class="nav-link">CONTACT</a> </li>
+                </ul>
+                <div class="cart"><img width="auto" height="50" src="image/CART.png" class="attachment-full size-full"
+                    alt="hotel logo" loading="lazy" srcset="image/CART.png 366w"
+                    sizes="(max-width: 500px) 200vw, 150px" /></a></div>
+                
+                <div class="hambuger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+                  
+    
+      <script>
+        const hambuger = document.querySelector('.hambuger');
+        const navMenu = document.querySelector('.nav-menu');
+    
+        hambuger.addEventListener("click", mobileMenu);
+    
+        function mobileMenu() {
+          hambuger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        }
+    
+        const navLink = document.querySelectorAll('.nav-link');
+        navLink.forEach((n) => n.addEventListener("click", closeMenu));
+    
+        function closeMenu() {
+          hambuger.classList.remove("active");
+          navMenu.classList.remove("active");
+        }
+      </script>
+
+  <section class="home" id="home">
+    <div class="head_container">
+      <div class="image">
+        <img src="image/COVER2.png" class="slide">
+      </div>
+    </div>
+</section>
+
+<section class="book">
+    <section class="book">
+        <div class="container flex">
+          <div class="input grid">
+            <div class="box">
+              <label>Date</label>
+              <input type="date" placeholder="Check-in-Date">
+            </div>
+            <form>
+                <label for="startTime">Time </label>
+                <input type="time" id="startTime">
+              </form>
+            <div class="box">
+              <label>Adults</label> <br>
+              <input type="number" placeholder="0">
+            </div>
+          </div>
+          <div class="search">
+            <input type="submit" value="SEARCH">
+          </div>
+        </div>
+      </section>
+  </section>
+  
+
+
+
+  <!--------------book-------->
+<!--------------list room-------->
+
+<div class="content mtop">
+
+            <!--------list room 1-------->
+    <div class="main_box">
+        <div class="box flex_room">
+            <div class="left">
+                <img width="500" height="auto"src="image/food1.png" alt="">
+            </div>
+            <div class="right grid2 ">
+                <div class="right1">
+                    <h3 class="head_info">Yamazato Dinner 1</h3>
+                    <br></br>
+                    <p class="info">銀杏会席 Icho Kaiseki 
+                        前菜、お椀、お造り、焼物、煮物、お食事、お食後
+                        Appetizer, soup, sashimi, grilled dish, simmered dish, rice dish, and dessert </p>
+                    
+                </div>
+                <div class="right2">
+                    
+                </div>
+
+                <div class="price">
+                    <br></br>
+                    <h3 class="pro_price">1,000.00 THB</h3>
+                </div>
+
+                <div class="button_room">
+                    <div class="booking">
+                        <input type="submit" value="BOOKING">
+
+                    </div>
+                    <div class="add_to_card">
+                        <input type="submit" value="ADD TO CARD">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="end_line"></div>
+    </div>
+
+
+            <!--------list room 2-------->
+    <div class="main_box">
+        <div class="box flex_room">
+            <div class="left">
+                <img width="500" height="auto" src="image/food2.png" alt="">
+            </div>
+            <div class="right grid2 ">
+                <div class="right1">
+                    <h3 class="head_info">Yamazato Dinner 2</h3>
+                    <br></br>
+                    <p class="info">鮨会席 Sushi Kaiseki
+                        前菜、焼物、天ぷら種、握り鮨（8貫、巻き3貫）、お吸い物、お食後
+                        Appetizer, grilled dish, tempura, nigiri sushi (8 pieces and 3 sushi rolls), soup, and dessert</p>
+                </div>
+                <div class="right2">
+                    
+                </div>
+
+                <div class="price">
+                    <br></br>
+                    <h3 class="pro_price">1,800.00 THB</h3>
+                </div>
+
+                <div class="button_room">
+                    <div class="booking">
+                        <input type="submit" value="BOOKING">
+                    </div>
+                    <div class="add_to_card">
+                        <input type="submit" value="ADD TO CARD">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="end_line"></div>
+    </div>
+
+
+            <!--------list room 3-------->
+            <div class="main_box">
+        <div class="box flex_room">
+            <div class="left">
+                <img width="500" height="auto" src="image/food3.png" alt="">
+            </div>
+            <div class="right grid2 ">
+                <div class="right1">
+                    <h3 class="head_info">Yamazato Dinner 3</h3>
+                    <br></br>
+                    <p class="info">和牛陶板焼き会席 Wagyu Toubanyaki Kaiseki
+                        前菜、お造り、蟹サラダ、和牛４等級 (テンダーロイン100gもしくはサーロイン150g)、お食事、お食後
+                        Appetizer, sashimi, salad with crab, wagyu beef A4-grade tenderloin100g or sirloin 150g
+                        rice and miso soup, and dessert</p>
+                </div>
+                <div class="right2">
+                    
+                </div>
+
+                <div class="price">
+                    <br></br>
+                    <h3 class="pro_price">4,700.00 THB</h3>
+                </div>
+
+                <div class="button_room">
+                    <div class="booking">
+                        <input type="submit" value="BOOKING">
+                    </div>
+                    <div class="add_to_card">
+                        <input type="submit" value="ADD TO CARD">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="end_line"></div>
+    </div>
+</div>
