@@ -1,0 +1,97 @@
+body {
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    font-family: 'Hind Vadodara', sans-serif;
+    color: #696F79;
+}
+
+.top-bar{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10;
+    margin-bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  
+  .nav-link {
+    display: block;
+    color: #696F79;
+  }
+
+  .nav-link:hover{
+    color: #0B4DAB;
+  }
+
+.top-bar .logo{
+    width: 40px;
+    height: auto;
+}
+
+.front{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main{
+    margin-top: 50px;
+    border: 5px;
+}
+
+.main .title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.table {
+    border-spacing: 40px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+table ,th ,td{
+    border: 1px solid #cccccc;
+    border-collapse: collapse;
+} 
+
+tr:nth-child(even) {
+    background-color: #EDFEFF;
+}
+
+.last{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.last .SubmitSearch{
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #1565d8;
+    border: none;
+    border-radius: 10px;
+}
+
+.last .SubmitSearch:hover {
+    background-color: #0B4DAB;
+}
+
+table{
+    width: 80%;
+}
+
