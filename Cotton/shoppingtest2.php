@@ -17,7 +17,8 @@
                     'date_checkout'     => $_POST["check_out_date"],
                     'item_price'        => $_POST['total_price'],
                     'item_tax'          => $_POST['total_tax'],
-                    'item_quantity'     => $_POST['quantity']
+                    'item_quantity'     => $_POST['quantity'],
+                    'member_guest'      => $_POST['MemberGuest']
                 );
                 $_SESSION['shopping_cart'][$count] = $item_array;
                 $_SESSION['countnextpage'] = $count;
@@ -37,7 +38,8 @@
                     'date_checkout'     => $_POST["check_out_date"],
                     'item_price'        => $_POST['total_price'],
                     'item_tax'          => $_POST['total_tax'],
-                    'item_quantity'     => $_POST['quantity']
+                    'item_quantity'     => $_POST['quantity'],
+                    'member_guest'      => $_POST['MemberGuest']
 
             );
             $_SESSION["shopping_cart"][0] = $item_array;
@@ -80,9 +82,11 @@
         <table class="tbl-cart" cellpadding="10" cellspacing= "1">
             <tbody>
                 <tr>
+                    <th style = "text-align: left"  width = "5%">Picture</th>
                     <th style = "text-align: left"  width = "10%">Booking_Name</th>
-                    <th style = "text-align: center" width = "20%">Check-in Date</th>
-                    <th style = "text-align: center" width = "20%">Check-out Date</th>
+                    <th style = "text-align: left" width ="25%">Description</th>
+                    <th style = "text-align: center" width = "10%">Check-in Date</th>
+                    <th style = "text-align: center" width = "10%">Check-out Date</th>
                     <th style = "text-align: right;" width="5%">Quantity</th>
                     <th style = "text-align: right;" width="10%">Unit Price</th>
                     <th style = "text-align: right;" width="10%">Unit tax</th>
@@ -97,11 +101,27 @@
                     $totalall = 0;
                     foreach($_SESSION["shopping_cart"] as $keys=>$values)
                     {
+                        $bookingid = $values['item_name'];
+                        $sql1 = "
+                        SELECT Booking_Name, Description, Picture 
+                        FROM list_booking
+                        WHERE Booking_ID = '$bookingid'
+                        ;
+                        ";
+                        $objQuery1 = mysqli_query($conn, $sql1) or die("Error Query [" . $sql1 . "]");
+                        while($objResult1 = mysqli_fetch_array($objQuery1))
+                        {
+                            $Booking_Name = $objResult1['Booking_Name'];
+                            $Picture = $objResult1['Picture'];
+                            $Description= $objResult1['Description'];
+                        }
                 ?> 
                 <tr>
-                        <td style = "text-align: left"  width = "10%"><?php echo $values["item_name"]; ?></td>
-                        <td style = "text-align: center" width = "20%"><?php echo $values["date_checkin"];?></td>
-                        <td style = "text-align: center" width = "20%"><?php echo $values["date_checkout"];?></td>
+                        <td style = "text-align: left"  width = "5%"><img src="<?php echo $Picture; ?>" width = "50px" >
+                        <td style = "text-align: left"  width = "10%"><?php echo $Booking_Name .$values["item_name"]; ?></td>
+                        <th style = "text-align: left" width ="25%"><?php echo $Description;?></th>
+                        <td style = "text-align: center" width = "10%"><?php echo $values["date_checkin"];?></td>
+                        <td style = "text-align: center" width = "10%"><?php echo $values["date_checkout"];?></td>
                         <td style = "text-align: right;" width="5%"><?php echo $values["item_quantity"];?></td>
                         <td style = "text-align: right;" width="10%">$ <?php echo $values["item_price"];?></td>
                         <td style = "text-align: right;" width="10%">$ <?php echo $values["item_tax"];?></td>
