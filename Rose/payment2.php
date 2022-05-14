@@ -88,6 +88,10 @@
         document.getElementById("final_price1").value=z;   
         document.getElementById("TaxandFee1").value=tax;  
 
+        $("#mydata").val(y); //store z into hidden field
+        $("#mytax").val(tax);
+        $("#myday").val(days);
+
     }    
 
     
@@ -179,7 +183,7 @@
                         <a class="nav-link h5 me-4" href="#"">Contact</a>
                     </div>
                     <div class="navbar-right ms-auto">
-                        <a href="#" class="cart"> <img src="picture/cart.png" alt=""> </a>
+                        <a href="Totalcart1.php" class="cart"> <img src="picture/cart.png" alt=""> </a>
                         <a href="logout.php" class="btn btn-danger">Logout</a>
                     </div>
                     </div>
@@ -416,8 +420,12 @@
                                 <h3>Total price</h3>
                                 <p>Total includes tax recovery charges and service fees <br>Full payment will be charged to your credit card when you book this hotel.</p>
                             </div>
+
                             <div class="price-show">
-                                <h3 class="final_price">THB <span id="final_price" name="final_price" > 0.00 </span> </h3>
+                                <h3 class="final_price">THB <span id="final_price" name="final_price"> 0.00 </span> </h3>
+                                <input type="hidden" name="total_price" id="mydata">
+                                <input type="hidden" name="total_tax" id="mytax">
+                                <input type="hidden" name="quantity" id="mydata" value="1">
                             </div>
                         </div>
                         <div class="end_line"></div>
@@ -450,7 +458,7 @@
                                 <input id="CardNumber" type="text" name="CardNumber" placeholder="Card number" require>
                             </div>
                             <div class="Button_summit">
-                                <input type="submit" id="cart" name="cart" value="Add to cart">
+                                <input type="submit" id="cart" name="cart" value="Add to cart" formaction="Totalcart1.php">
                                 <input type="submit" id="booking" name="booking" value="Booking">
                             </div>
                         </div>    
