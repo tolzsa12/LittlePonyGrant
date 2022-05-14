@@ -1,0 +1,433 @@
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue: #1565D8;
+    --second-yellow: #F9D100;
+    --third-blue: #36C3C5;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Vadodara';
+    scroll-behavior: smooth;
+    border-left: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  
+  .head_container {
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  /*--------------header--------*/
+  header {
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .logo img {
+    width: 70px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart{
+    margin-right: 40px;
+  }
+  
+  /*--------------header--------*/
+  /*--------------home--------*/
+  
+  .home .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 40%;
+  }
+  
+  
+  
+  /*--------------header--------*/
+  /*--------------home--------*/
+  
+  .home .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -S1;
+    width: 100%;
+    height: 40%;
+  }
+  /*--------------home--------*/
+  /* book detail (all booking detail)*/
+  .book_detail{
+      margin-top: 15%;
+      margin-left: 5%;
+      margin-right: 5%;
+  }/*booking frame/
+  /*--------------book--------*/
+  .flex {
+    display: flex;/*div will sep horizontally*/
+  }
+  .row {/*for seperating each part by row*/
+    display: flex;
+    margin-top: 0;
+  }
+    /*ในรูปพนักงาน*/
+   .Information_booking table,tr{
+    border:1px solid rgb(60, 60, 60)
+   }
+  
+   .Information_booking table{
+    margin-left: 10%;
+    margin-top :5%;   
+    border-collapse: collapse;
+   }
+  
+   #t32{
+    -moz-tab-size: 32; /* Firefox */
+    tab-size: 32;
+  }
+  
+  
+  /*booking Frame*/
+  
+  input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+    background: #fafafa;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .main_box{
+    display: block;
+    width: 100%;
+  }
+  
+  .flex_room {
+    display: flex;
+  }
+  
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .mtop {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .left {
+    width: 50%;
+  }
+  .right {
+    width: 50%;
+  }
+  
+  .left img{
+      width: 506px;
+      height: 385px;
+  }
+  
+  p {
+    line-height: 30px;
+    color: #a4a4a4;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+  .content .right h4 {
+    font-size: 20px;
+    color: #6B6B6B;
+  }
+  
+  .head_service{
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #6B6B6B;
+  }
+  
+  .list{
+      display: flex;
+  }
+  li a{
+      margin-right: 15px;
+  }
+  
+  .flex_room .right{
+      margin-right: 50px;
+      margin-left: -2%;
+  }
+  
+  .right1{
+      background-color: #E7FCFF;
+      width: 230%;
+      margin-left: -400px;
+      margin-top: 20%;
+      margin-bottom: 10%;
+
+  }
+  
+  .right1 .info{
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+  
+  .right1 .nav_list li{
+    margin-top: -10px;
+  }
+  
+  
+  .right2 .nav_list li{
+    margin-top: -10px;
+  }
+  
+  .right2 .nav_list p{
+    color: #00A106;
+  }
+  
+  .head_info{
+    margin-top: 0px;
+    margin-left: -60px;
+    font-size: 20px;
+    font-weight: 600;
+    font-size: 25px;
+  }
+  
+  .nav_list{
+      margin-top: 50px;
+      margin-left: 30px;
+  }
+  
+  .input{
+    width: 90%;
+    margin-left: 4%;
+    margin-top: 3%;
+  }
+  
+  .input h4{
+    margin-bottom: 2%;
+  }
+  
+  .input-box .right{
+    margin-right: 50px;
+    margin-left: 5%;
+  }
+  
+  .left .inputBx input,
+  .left .inputBx .form-control,
+  .right .inputBx input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #c4c4c4;
+    letter-spacing: 1px;
+    color: #313131;
+    background: transparent;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;  
+    font-weight: 450;
+    margin-top: 0.5rem;
+  }
+  
+  .left .inputBx input:focus,
+  .left .inputBx .form-control:focus,
+  .right .inputBx input:focus{
+    border: 2px solid #1565D8;
+  }
+  
+  
+  .left .inputBx,
+  .right .inputBx{
+    padding: 0rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: #313131;
+    position: relative;
+  }
+  
+  .end_line{
+    border-top: 1px solid #696F79;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  
+  
+  table{
+    margin-left: 6%;
+    margin-bottom: 2%;
+  }
+  
+  table .total-day,
+  table .table-price{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-left: 3%;
+  }
+  
+  table .table-info-book{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-left: 1.5%;
+    font-weight: 500;
+
+  }
+  
+  /*total price*/
+  
+  .price-show{
+    margin-left: -150px;
+    margin-top: -20px;
+  }
+  
+  .price-show p{
+  margin-top: 20px;
+  font-size: 20px;
+  text-decoration: line-through 1.5px;
+  }
+  .price-show h3{
+    margin-top: 30px;
+    font-size: 25px;
+    color: #ff0000;
+    font-weight: 600;
+  }
+  
+  .total-price{
+    margin-left: 6%;
+    width: 90%;
+  }
+  
+  .total-price .price-show{
+    margin-left: 65%;
+    margin-top: 1%;
+  }
+  
+  /*Payment Confirmation*/
+  .Payment_method .Payment_Box
+  {
+  margin-top: 2%;
+  background-color: #ffffff;
+  padding: 10%;
+  padding-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: 5px 5px 5px 5px  #e5e5e5;
+  }
+  
+  
+  .Payment_method input,
+  .Payment_method .form-control{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #c4c4c4;
+    letter-spacing: 1px;
+    color: #313131;
+    background: transparent;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;  
+    font-weight: 450;
+    margin-top: 0.5rem;
+  }
+  
+  .Payment_method input:focus,
+  .Payment_method .form-control:focus{
+    border: 2px solid #1565D8;
+  }
+  
+  
+  Payment_method .inputBx{
+    padding: 0rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: #313131;
+    position: relative;
+  }
+  
+  .button_booking{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  width: 300px;
+  margin-top: 20px;
+  text-align: center;
+  }
+  .button_booking .booking input{
+  background-color: var(--primary-blue);
+  color: #fff;
+  text-align: center;
+  }
+  .clear {
+    clear: both;
+  }
+  .Payment_method .Payment_Box .Button_summit input{
+    margin-left: 40%;
+    background-color: #1565D8;
+    width: 20%;
+    color: #fafafa;
+    font-size: large;
+  }
+
+
+.column_in_col2{
+  border:1px solid #6B6B6B;
+  background-color: white;
+  border-style: groove;
+  border-radius: 10px;
+  padding-left: 1%;
+  width: 105%;
+}
+
+.service-staff-title{
+    font-size: 20px;
+}
+
+.column_in_col2 .descriptio{
+    margin-top: 3%;
+}
+
+.description p{
+    margin-left: -0%;
+    margin-bottom: -3%;
+}
+
+.column_in_col2 img
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 110%;
+}
+
+.right-part table{
+    margin-top: 10%;
+    width: 120%;
+    color: #696F79;
+}
+
+.right-part table tr{
+    color: #696F79;
+}
+  
