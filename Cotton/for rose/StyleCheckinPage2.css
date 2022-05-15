@@ -1,0 +1,386 @@
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue: #1565D8;
+    --second-yellow: #F9D100;
+    --third-blue: #36C3C5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Vadodara';
+    scroll-behavior: smooth;
+    border-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+  }
+
+
+  
+  .head_container {
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  /*--------------header--------*/
+  header {
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .logo img {
+    width: 80px;
+    margin-left: 20px;
+  }
+  
+.cart{
+    margin-right: 40px;
+}
+.cart image{
+    width: 80px;
+}
+
+  .hambuger {
+    display: none;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(59, 59, 59);
+  }
+  
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header ul li {
+    margin-left: 3rem;
+  }
+  
+  header ul li a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #696F79;
+    transition: 0.5s;
+  }
+  
+  header ul li a:hover {
+    color: #C1B086;
+  }
+  /*อันนี้เวลาย่อหน้าจอเหลือ 768pxจะแสงออกมาเป็นอย่างนี้*/
+  @media only screen and (max-width: 768px) {
+    header ul {
+      display: block;
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.5s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      z-index: 20;
+    }
+  
+    header ul.active {
+      left: 0%;
+    }
+  
+    header ul li {
+      margin: 2.5rem 0;
+    }
+  
+    header ul li a {
+      color: black;
+    }
+  
+    .hambuger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hambuger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hambuger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hambuger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  /*--------------header--------*/
+/*--------------home--------*/
+
+.home .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 40%;
+  }
+  
+  .book{
+      max-width: 80%;
+  }
+  
+  
+  /*--------------home--------*/
+  /*--------------book--------*/
+  .flex {
+    display: flex;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .book {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 100%;
+    height: 20vh;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+    
+  }
+  
+  .book .input {
+    background: #ffffff;
+    padding: 20px 20px 40px 20px;
+    box-shadow: 0px 4px 15px rgb(112, 112, 112);
+    width: 90%;
+    font-size: 30px;
+}
+  
+  .book .search {
+    background: var(--third-blue);
+    padding: 20px;
+        box-shadow: 0px 4px 15px rgb(112, 112, 112);
+  }
+  
+  input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+    background: #fafafa;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .book .search {
+    width: 20%;
+  }
+
+  .search input{
+      color: #fff;
+  }
+  
+  .book .search input {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+/*--------------book--------*/
+/*button*/
+
+
+/*button*/
+
+/*-------------- list room--------*/
+
+button.button{
+    width: 6%;
+    padding: 2% ;
+    border: none;
+    font-size: 20px;
+    margin: 3% 6% ;
+    border-radius: 5px;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
+button.first_in_row{
+  width: 6%;
+  padding: 2% ;
+  border: none;
+  font-size: 20px;
+  margin-left: 15%;
+  border-radius: 5px;
+  text-align: center;
+  transition-duration: 0.4s;
+}
+button.buttonconfirm{
+  width: 10%;
+  padding: 1% ;
+  border: none;
+  font-size: 20px;
+  margin: 3% 6% ;
+  border-radius: 5px;
+  text-align: center;
+  transition-duration: 0.4s;
+}
+ .status-200
+{
+background-color: #F9D100;
+}
+.status-200:hover {
+  background-color: #feea84; /* Green */
+  color: rgb(5, 5, 5);
+}
+ .status-202
+{
+background-color: red;
+}
+.status-202:hover {
+  background-color: #ff7777; /* Green */
+  color: white;
+}
+ .status-222
+{
+background-color: green;
+}
+.status-222:hover
+{
+  background-color: rgb(99, 244, 99);
+  color: white;
+}
+.buttonconfirm:hover{
+  background-color: rgb(74, 74, 74);
+  color: white;
+}
+
+  p {
+    line-height: 30px;
+    color: #a4a4a4;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .content .right h4 {
+    font-size: 20px;
+    color: #6B6B6B;
+  }
+
+  .list{
+      display: flex;
+  }
+  li a{
+      margin-right: 15px;
+  }
+  .main_box h5{
+    margin-bottom: 30px;
+    color: #6B6B6B;
+    font-size: 50px;
+}
+  .main_box h2{
+      margin-bottom: 30px;
+      color: #6B6B6B;
+      font-size: 30px;
+  }
+
+/*----Making Modal----*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
